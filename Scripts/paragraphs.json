@@ -1,0 +1,36 @@
+{
+	"resumeData": [
+		{
+		"id": "highlights1",
+		"text": "Methodical and strong organizational skills"
+		},
+		{
+		"id": "highlights2",
+		"text": "Excellent attention to details"
+		},
+		{
+		"id": "highlights3",
+		"text": "Highly motivated, patient, always willing to acquire new knowledge and willing to learn with  people with different opinions and backgrounds."
+		},
+		{
+		"id": "education",
+		"text":"<span class='title'>B. S.c in Biological Sciences</span><br> Pontifical Catholic University of Paraná, Curitiba, Brazil <br><span class='title'> Master’s in Biotechnology </span><br> Pequeno Príncipe University, Curitiba, Brazil <br><span class='title'> Software Engineering Technician</span> <br> Centennial College, Toronto, Canada"
+		},
+		{
+		"id": "experience",
+		"text": "<span class='title'>Quality Control Technician</span> <br> Baylis Medical Company, Mississauga, Canada <br><span class='title'> Research Assistant Volunteer</span> <br> Cell Therapy Translational Research Laboratory (Dr Armand Keating Lab), Princess Margaret Hospital, Toronto, Canada <br><span class='title'> Biology Teacher </span><br> Estadual Do Parana High School, Curitiba, Brazil"
+		},
+		{
+		"id": "researchDescription",
+		"text": "<span class='title'>Development and characterization of a new inbred transgenic rat strain expressing DsRed monomeric fluorescent protein.</span><br> Authors: Montanari, S.; Wang, X-H.; Yannarelli, G.; Dayan, V.; Berger, T.; Zocche, L.; Kobayashi, E.;  Viswanathan, S.; Keating, A."
+		},
+		{
+		"id": "researchDescription2",
+		"text":"<span class='title'>Pap Test as the First Step in Screening Genetic Stability in Cell-Based Therapy.</span><br> Authors: Carvalho, K.A.T.; Zocche, Larissa, Irioda, A.C., Souza, C., Ferreira, R.J.; Aliprandini, E.; Cunha, R.C.; Francisco, J.C.; Guarita-Souza, L.C.; Malvezzi, M.; Beltrame, M.; Mesquita, L.; Kuczera, D.; Vargas, R."
+		},
+		{
+		"id": "researchDescription3",
+		"text": "<span class='title'>Functional Outcome of Bone Marrow Stem Cells (CD45+/CD34−) After Cell Therapy in Acute Spinal Cord Injury: In Exercise Training and in Sedentary Rats. </span><br> Authors: Carvalho, K. A. T.; Cunha, R. C.; Vialle E.N; Osiecki, R.; Moreira, GHG; Simeoni, R. B.; Francisco, J. C.; Guarita-Souza, L. C.; Oliveira, L.; Zocche, Larissa; Olandoski, M."
+		}
+	]
+}
