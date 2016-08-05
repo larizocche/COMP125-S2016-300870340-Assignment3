@@ -4,7 +4,7 @@
 * @date: August 5, 2016
 *
 * Student # : 300870340
-* WebSite: 
+* WebSite: http://comp125-s2016-300870340-assignment3.azurewebsites.net
 *
 * @description: This is the main JavaScript file for this website.
 */
@@ -15,17 +15,22 @@
     "use strict";
 
     var xhr;
-    /**
-     * 
-     */
-    //named function instead an anonymous function;
+    /** Function to monitor the progress of the Ajax Call
+     *
+     * @funtion readData
+     * @returns {void}
+     * */
     function readData() {
-        //data loaded                   everything is ok
-        if ((xhr.readyState === 4) && (xhr.status === 200)) 
-
-        {
+        //Property readyState 4 is to check if the request is ready          Status 200 means everything is ok on the server
+        if ((xhr.readyState === 4) && (xhr.status === 200)) {
+            //save the Ajax response to a variable. The response came back as a string, it needs to be converted back into JSON format.
             var paragraphs = JSON.parse(xhr.responseText);
 
+
+            /**
+            * This variable define an array of HTML elements.
+            * Each element has a number, known as an index, it represents the element's position within the array.
+            * */
             var resume = [];
 
             resume[0] = document.getElementById("highlights1");
@@ -42,7 +47,6 @@
             // check to see if the data exists
             for (var index = resumeLength; index >= 0; index--) {
                 //inject html tags along with the text
-                console.log("JavaScript working");
                 if (resume[index]) {
                     resume[index].innerHTML = paragraphs.resumeData[index].text;
                 }
@@ -50,10 +54,14 @@
         }
     }
 
-    // app entry function
+    /** Function with the 4 steps to update the data
+   *
+   * @funtion init
+   * @returns {void}
+   * */
     function init() {
         xhr = new XMLHttpRequest(); //step 1: create the object
-        xhr.open("GET", "Scripts/paragraphs.json", true);//step 2:true means async (do not have to wait for the request to complete)
+        xhr.open("GET", "Scripts/paragraphs.json", true);//step 2:true means async (do not have to wait for the request to complete). Get all the information via the AJAX call.
         xhr.send(null); //step 3: submit the request to the server;
         xhr.addEventListener("readystatechange", readData)
     }
@@ -65,7 +73,13 @@
 
     //cancel the default behaviour of the button
     sendButton.addEventListener("click", sendButtonClick);
-    
+
+
+    /**  Function 
+  *
+  * @funtion sendButtonClick
+  * @returns {void}
+  * */
     function sendButtonClick(event) {
         console.log("clicked");
     }
@@ -80,8 +94,13 @@
         console.log("submitted");
         showFormInput();
         contactForm.reset();
-
     })
+
+    /**  Function to display the data from the form in the console.
+    *
+    * @funtion showFormInput 
+    * @returns {void}
+    * */
     function showFormInput() {
         console.log("*******************************")
         console.log("First Name: " + firstName.value);
@@ -91,8 +110,7 @@
         console.log("Message: " + message.value);
         console.log("*******************************")
     }
-
-
+    
 })();
 
 
